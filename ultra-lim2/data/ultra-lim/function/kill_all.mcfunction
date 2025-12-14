@@ -1,0 +1,1 @@
+kill @e[tag=ultra-lim.entity,distance=0..,type=!player]
