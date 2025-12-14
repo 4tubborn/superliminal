@@ -1,6 +1,6 @@
 # Superliminal
 A Minecraft datapack that restores the function in Superliminal
-* supported version: 1.21.6-1.21.8
+* supported versions: 1.21.6-1.21.8
 * develop in 1.21.8
 
 ## Branch
