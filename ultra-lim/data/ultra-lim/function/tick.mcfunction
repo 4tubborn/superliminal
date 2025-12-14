@@ -1,4 +1,0 @@
-execute as @a[scores={cur_aimed_entity=1}] at @s anchored eyes positioned ^ ^ ^ as @n[type=block_display,tag=ultra-lim.entity,distance=..50,scores={cur_aimed_entity=1}] run function ultra-lim:tp/tp
-execute as @a[scores={cur_aimed_entity=1}] at @s anchored eyes run tp @n[type=interaction,tag=ultra-lim.entity,distance=..1.5] @s
-execute as @e[limit=5,sort=arbitrary,type=armor_stand,tag=ultra-lim.entity,predicate=ultra-lim:on_ground,distance=..100] at @s run function ultra-lim:gravity/on_ground
-execute unless entity @a[scores={cur_aimed_entity=1}] run scoreboard players set @e[predicate=ultra-lim:ultra_lim_entity,scores={cur_aimed_entity=1},distance=..50] cur_aimed_entity 0
