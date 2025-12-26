@@ -1,0 +1,41 @@
+{
+    "criteria": {
+        "left_click":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "shulker",
+                            "nbt": "{Tags:[\"ultra-lim.entity\"]}"
+                        }
+                    },
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {"cur_aimed_entity": 0}
+                    }
+                ],
+                "player": [
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "cur_aimed_entity": 0
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "left_click"
+        ]
+    ],
+    "rewards": {
+        "function": "ultra-lim:first_click/first_left_click"
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "criteria": {
+        "left_click1":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "shulker",
+                            "nbt": "{Tags:[\"ultra-lim.entity\"]}"
+                        }
+                    },
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {"cur_aimed_entity": 1}
+                    }
+                ],
+                "player": [
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "cur_aimed_entity": 1
+                        }
+                    }
+                ]
+            }
+        },
+        "left_click2":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "interaction",
+                            "nbt": "{Tags:[\"ultra-lim.entity\"]}"
+                        }
+                    }
+                ],
+                "player": [
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "cur_aimed_entity": 1
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "left_click1",
+            "left_click2"
+        ]
+    ],
+    "rewards": {
+        "function": "ultra-lim:second_click/second_left_click"
+    }
+}

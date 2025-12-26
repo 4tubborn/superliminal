@@ -1,0 +1,8 @@
+{
+  "pack": {
+    "description": "超阈限空间数据包",
+    "pack_format": 81,
+    "min_format": 1,
+    "max_format": 1145
+  }
+}
