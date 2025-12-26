@@ -1,5 +1,5 @@
 # Superliminal
-A Minecraft datapack that restores the function in Superliminal
+A Minecraft datapack that recreates the Superliminal mechanics
 * supported version: 1.21.6-1.21.8
 * develop in 1.21.8
 
